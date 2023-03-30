@@ -6,8 +6,10 @@
  * @c: buffer to print
  * @s: bytes of buffer to print
  * @l: line of buffer to print
+ *
  * Return: void
  */
+
 void print_line(char *c, int s, int l)
 {
 	int j, k;
@@ -17,7 +19,7 @@ void print_line(char *c, int s, int l)
 		if (j <= s)
 			printf("%02x", c[l * 10 + j]);
 		else
-			printf(" ");
+			printf("  ");
 		if (j % 2)
 			putchar(' ');
 	}
@@ -34,6 +36,7 @@ void print_line(char *c, int s, int l)
  * print_buffer - prints a buffer
  * @b: buffer to print
  * @size: size of buffer
+ *
  * Return: void
  */
 void print_buffer(char *b, int size)
